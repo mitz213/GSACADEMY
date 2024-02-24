@@ -17,14 +17,14 @@ $(document).ready(function(){
         var comp = Math.floor(Math.random()*3+1 );
 
     if(comp == 1 ){
-        $("#pc").text("グー")
-        $("#result").text("あいこです")
+        $("#pc_hands").text("グー")
+        $("#judgement").text("あいこです")
     }else if(comp == 2 ){
-        $("#pc").text("チョキ")
-        $("#result").text("勝ちです")     
+        $("#pc_hands").text("チョキ")
+        $("#judgement").text("勝ちです")     
     }else if(comp == 3 ){
-        $("#pc").text("パー")
-        $("#result").text("負けです")
+        $("#pc_hands").text("パー")
+        $("#judgement").text("負けです")
     }
 });
 
@@ -33,28 +33,28 @@ $(document).ready(function(){
         var comp = Math.floor(Math.random()*3+1 );
 
     if( comp == 1 ){
-        $("#pc").text("グー")
-        $("#result").text("負けです")
+        $("#pc_hands").text("グー")
+        $("#judgement").text("負けです")
     }else if( comp == 2 ){
-        $("#pc").text("チョキ")
-        $("#result").text("あいこです")
+        $("#pc_hands").text("チョキ")
+        $("#judgement").text("あいこです")
     }else if( comp == 3 ){
-        $("#pc").text("パー")
-        $("#result").text("あいこです")
+        $("#pc_hands").text("パー")
+        $("#judgement").text("あいこです")
     }
 });
     $("#par_btn").on("click", function(){
         var humaPar = 3;
         var comp = Math.floor(Math.random()*3+1 );
     if(comp==1){
-        $("#pc").text("グー")
-        $("#result").text("勝ちです")
+        $("#pc_hands").text("グー")
+        $("#judgement").text("勝ちです")
     }else if(comp==2){
-        $("#pc").text("チョキ")
-        $("#result").text("負けです")
+        $("#pc_hands").text("チョキ")
+        $("#judgement").text("負けです")
     }else if(comp==3){
-        $("#pc").text("パー")
-        $("#result").text("あいこです")
+        $("#pc_hands").text("パー")
+        $("#judgement").text("あいこです")
     }
  });
 
@@ -74,8 +74,8 @@ $(document).ready(function(){
     <li id="cho_btn">チョキ</li>
     <li id="par_btn">パー</li>
   </ul>
-  <div id="pc">コンピュータの出した手（表示領域）</div>
-  <div id="result">勝ち負け引き分け（表示領域）</div>
+  <div>コンピュータの出した手は？「<span id="pc_hands">なに？</span>」</div>
+  <div>勝敗は？「<span id="judgement"></span>」</div> 
 </main>
 
 
